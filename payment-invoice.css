@@ -1,0 +1,164 @@
+
+*{text-decoration: none;  box-sizing: border-box; }
+
+.invoice-container{
+    width: 80%;
+    padding: 30px;
+    font-family: 'Lucida Sans';
+    margin: 20px auto;
+    background-color: aliceblue;
+   
+}
+body{
+   background-color: #e9e8e6; 
+}
+
+.invoice-n-date{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-size: large;
+
+}
+.invoice-n-date a{color: black; }
+
+
+.papa-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+   
+    
+}
+th{
+    background-color: blueviolet;
+}
+
+table,tr,th,td{
+    border-bottom: 2px solid lightgray;
+    padding: 10px;
+    border-collapse: collapse;
+    
+
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+tr:hover{
+    background-color: #bbfae5;
+}
+
+.subtotal{
+    width: 90%;
+    text-align: right;
+
+}
+
+.total{
+   position: relative;
+   left: 55px;
+  
+}
+
+hr{
+    
+    opacity: 0.5;
+    width: 170px;
+    margin-right: 0%;
+    
+}
+
+
+
+@media screen and (max-width:696px) {
+
+    .invoice-container{
+        /* background-color: red; */
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+       
+    }
+
+    .papa-flex{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        gap: 40px;
+    }
+
+    /* body{
+       background-color: aqua;
+       width: 100%;
+       margin: auto; 
+     }  */
+
+    
+    table,tr,th,td{
+    /* width:40px;
+    margin: auto; */
+    /* background-color: green; */
+    padding: 10px;
+    font-size: 10px;
+    }
+    table{
+        width: 30%px;
+        position: relative;
+
+    }
+    th{
+        background-color: #291a36;
+        color: aqua;
+    }
+
+    .total{
+        position: relative;
+        left: 55px;
+        font-size: 14px;
+       
+     }
+
+    .subtotal{
+        width: 85%;
+        text-align: right;
+    
+    
+    }
+
+    hr{
+    
+        opacity: 0.5;
+        width: 150px;
+        margin-right: 0%;
+        
+    }
+
+
+
+}
+
+@media (min-width:350px) and (max-width:550px) {
+
+
+    .total{
+        position: relative;
+        left: 55px;
+        font-size: 14px;
+       
+     }
+
+    .subtotal{
+        width: 85%;
+        text-align: right;
+    
+    
+    }
+
+    
+}
